@@ -11,6 +11,7 @@ module.exports.DatabaseAddTask = async (email, periodType, listType, task) => {
         [`lists.${periodType}.${listType}`]: {
           ...task,
           date,
+          // date inserted
         },
       },
     }
